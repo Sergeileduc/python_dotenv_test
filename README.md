@@ -1,3 +1,5 @@
+![Python application](https://github.com/Sergeileduc/python_dotenv_test/workflows/Python%20application/badge.svg)
+
 # python_dotenv_test
 
 
