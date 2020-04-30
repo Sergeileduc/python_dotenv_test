@@ -6,8 +6,11 @@ import os
 
 from dotenv import load_dotenv
 
-load_dotenv()
 
-abc_key = os.getenv('ABC_KEY')
+def use_dotenv():
+    load_dotenv()
+    return os.getenv('ABC_KEY')
 
-print(abc_key)
+
+abc = use_dotenv()
+print(abc)

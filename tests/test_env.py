@@ -3,21 +3,13 @@
 """Doc."""
 
 import os
-import unittest
+# import pytest
 
 from dotenv import load_dotenv
 
-load_dotenv()
 
-abc_key = os.getenv('ABC_KEY')
+def test_env_abc():
+    load_dotenv()
+    abc_key = os.getenv('ABC_KEY')
 
-# print(abc_key)
-
-
-class TestEnvVar(unittest.TestCase):
-    """Run unit tests."""
-
-    async def test_env_abs(self):
-        """Test google_top_link."""
-        print(abc_key)
-        self.assertEqual(abc_key, "1234xyz")
+    assert abc_key == "1234xyz"
